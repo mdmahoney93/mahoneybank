@@ -1,3 +1,9 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
 function Spa() {
   return (
     <HashRouter>
@@ -29,3 +35,5 @@ function Spa() {
 }
 
 ReactDOM.render(<Spa />, document.getElementById("root"));
+
+reportWebVitals();
