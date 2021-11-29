@@ -1,59 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewpoint" content="width=devide-width, initial-scale=1.0" />
+    <title>Template</title>
+
+    <!-- bootstrap css -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <title>Mahoney Banking</title>
+
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div class="selector-menu">
-      <a href="#"><i class="fas fa-university fa-2x" alt="Home"></i></a>
-      <a href="#"
-        ><i class="fas fa-search-dollar fa-2x" alt="Transactions"></i
-      ></a>
-      <a href="#" class="current"
-        ><i class="fas fa-paper-plane fa-2x" alt="Send Money"></i
-      ></a>
-      <a href="#"><i class="fas fa-store fa-2x"></i></a>
-      <a href="#"><i class="fas fa-mobile-alt fa-2x"></i></a>
-    </div>
+    <!-- we will put our teact component inside this div -->
+    <div id="root"></div>
 
-    <div class="menu-container">
-      <div class="header-img">
-        <div class="overlay"></div>
-        <div class="balance">
-          <h1>Balance</h1>
-          <div>
-            <i class="fas fa-money-bill-alt"></i>
-            <p>$350.49</p>
-          </div>
-        </div>
-      </div>
+    <!-- load react -->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-router/umd/react-router.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"
+      crossorigin
+    ></script>
 
-      <ul class="list">
-        <li class="item">
-          <a href="#">Gas Station</a>
-          <p>$17.50</p>
-        </li>
-        <li class="item">
-          <a href="#">Sushi Dinner</a>
-          <p>$33.77</p>
-        </li>
-        <li class="item">
-          <a href="#">Grocery Shopping</a>
-          <p>$220.88</p>
-        </li>
-        <li class="item">
-          <a href="#">Burger Joint</a>
-          <p>$14.09</p>
-        </li>
-      </ul>
-    </div>
+    <!-- load our react component. -->
+    <script src="context.js" defer type="text/babel"></script>
+    <script src="navbar.js" defer type="text/babel"></script>
+    <script src="createaccount.js" defer type="text/babel"></script>
+    <script src="login.js" defer type="text/babel"></script>
+    <script src="deposit.js" defer type="text/babel"></script>
+    <script src="withdraw.js" defer type="text/babel"></script>
+    <script src="balance.js" defer type="text/babel"></script>
+    <script src="alldata.js" defer type="text/babel"></script>
+    <script src="home.js" defer type="text/babel"></script>
+    <script src="index.js" defer type="text/babel"></script>
   </body>
 </html>
